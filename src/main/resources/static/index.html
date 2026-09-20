@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Pokemon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="language-picker">
+      <label for="language-select">Language</label>
+      <select id="language-select">
+        <option value="en" selected>English</option>
+        <option value="fr">Français</option>
+        <option value="de">Deutsch</option>
+        <option value="es">Español</option>
+        <option value="it">Italiano</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="zh-hans">简体中文</option>
+        <option value="zh-hant">繁體中文</option>
+      </select>
+    </div>
+
+    <h1 id="pokemon-name" class="pokemon-name"></h1>
+
+    <p id="status-error" class="status status-error" hidden></p>
+
+    <img id="pokemon-image" class="pokemon-image" src="" alt="" hidden>
+    <div id="pokemon-types" class="pokemon-types"></div>
+
+    <button id="new-pokemon-button" type="button">New Random Pokemon</button>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
